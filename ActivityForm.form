@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.victorcheng.ActivityForm">
+  <grid id="27dc6" binding="panel1" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1000" height="800"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1000" height="800"/>
+      <preferredSize width="1000" height="800"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6f85a" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="997e">
+            <constraints border-constraint="East"/>
+            <properties>
+              <maximumSize width="300" height="800"/>
+              <minimumSize width="300" height="800"/>
+              <preferredSize width="300" height="800"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="90f22" class="javax.swing.JTable" binding="table1">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="29a73">
+            <constraints border-constraint="West"/>
+            <properties>
+              <maximumSize width="300" height="800"/>
+              <minimumSize width="300" height="800"/>
+              <preferredSize width="300" height="800"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3e174" class="javax.swing.JTable" binding="table2" default-binding="true">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="f9b1c" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <maximumSize width="400" height="800"/>
+              <minimumSize width="400" height="800"/>
+              <preferredSize width="400" height="800"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="35998" class="javax.swing.JLabel" binding="score">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="22"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="20"/>
+                  <minimumSize width="400" height="20"/>
+                  <preferredSize width="400" height="20"/>
+                  <text value="$0"/>
+                </properties>
+              </component>
+              <vspacer id="15351">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="100"/>
+                </constraints>
+              </vspacer>
+              <component id="4a4b4" class="javax.swing.JLabel" binding="ChineseWord">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font swing-font="Label.font"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="25"/>
+                  <minimumSize width="400" height="25"/>
+                  <preferredSize width="400" height="25"/>
+                  <requestFocusEnabled value="true"/>
+                  <text value="中文字"/>
+                </properties>
+              </component>
+              <component id="c8ddf" class="javax.swing.JLabel" binding="Definition">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="12"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Definition"/>
+                </properties>
+              </component>
+              <vspacer id="de660">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <component id="cffa7" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <margin top="2" left="6" bottom="2" right="6"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+              <component id="8f57c" class="javax.swing.JLabel" binding="output">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Enter the Chinese word"/>
+                </properties>
+              </component>
+              <grid id="b5892" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1c445" class="javax.swing.JButton" binding="upgradeCashPerWordButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Upgrade Cash Per Word"/>
+                    </properties>
+                  </component>
+                  <component id="28dde" class="javax.swing.JButton" binding="giveUpButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <text value="Give Up"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <vspacer id="d7d0a">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="34bb5">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="75"/>
+                </constraints>
+              </vspacer>
+              <component id="b6df2" class="javax.swing.JLabel" binding="nameDisplay">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="16"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="25"/>
+                  <minimumSize width="400" height="25"/>
+                  <preferredSize width="400" height="25"/>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <vspacer id="54458">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="200"/>
+                </constraints>
+              </vspacer>
+              <component id="9e91f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="14" style="2"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Instructions:"/>
+                </properties>
+              </component>
+              <component id="d0484" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Chinese Keyboard Required. Type in the word above to earn cash."/>
+                </properties>
+              </component>
+              <component id="4f56b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Use the cash to purchase upgrades."/>
+                </properties>
+              </component>
+              <component id="5ff62" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Upgrade stores on the left and buy stores on the right."/>
+                </properties>
+              </component>
+              <component id="6772a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Each store generates money depending on its level and rank."/>
+                </properties>
+              </component>
+              <component id="933e" class="javax.swing.JButton" binding="fullResetButton1" default-binding="true">
+                <constraints>
+                  <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <minimumSize width="84" height="25"/>
+                  <preferredSize width="84" height="25"/>
+                  <text value="Full Reset (Closes Application - Requires Restart)"/>
+                </properties>
+              </component>
+              <component id="3b459" class="javax.swing.JLabel" binding="upgradeCostLabel">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="14" style="2"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Upgrade Cost: $1000"/>
+                </properties>
+              </component>
+              <component id="9c41a" class="javax.swing.JLabel" binding="CashPerSecond">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font name="Century Gothic" size="12"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <maximumSize width="400" height="16"/>
+                  <minimumSize width="400" height="16"/>
+                  <preferredSize width="400" height="16"/>
+                  <text value="Total Cash Per Second:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="b3c55" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="c8888" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="e105d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="16f20" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
